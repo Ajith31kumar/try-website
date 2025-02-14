@@ -1,0 +1,225 @@
+/* Full Page Centering */
+.form-wrapperr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: white;
+}
+
+/* Form Box */
+.form-containerr {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 700px;
+  height: 500px;
+}
+
+/* Title */
+.form-titler {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Default Input, Select, and Textarea Styles */
+.inputr, 
+selectr, 
+textarear {
+  width: 95%; 
+  padding: 16px;
+  margin-bottom: 15px;
+  border: 2px solid #ff007f;
+  border-radius: 10px;
+  font-size: 20px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus Effect - Pink Border */
+.inputr:focus, 
+selectr:focus, 
+textarear:focus {
+  border: 1px solid #ff007f !important;
+  box-shadow: 0 0 8px rgba(255, 0, 127, 0.5);
+}
+
+/* Submit Button (Pink Gradient) */
+.submit-buttonr {
+  width: 100%;
+  padding: 16px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to right, #ff007f, #ff4da6);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.submit-buttonr:hover {
+  background: linear-gradient(to right, #e60073, #ff3385);
+  transform: scale(1.05);
+}
+
+/* Reaction Game Layout */
+.containerr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Stopwatch Display */
+.stopwatch-display {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #ff007f;
+}
+
+/* Buttons */
+.start-buttonr {
+  background-color: blue;
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.try-again-buttonr {
+  background-color: orange;
+  color: white;
+  padding: 16px;
+  font-size: 22px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.exit-buttonr {
+  background-color: red;
+  color: white;
+  padding: 16px;
+  font-size: 22px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+/* Game Area */
+.game-containerr {
+  margin-top: 20px;
+}
+
+.circler {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.reaction-timer {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Enlarged Result Box */
+.result-containerr {
+  background: white;
+  padding: 40px;
+  width: 700px;
+  height: 500px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Enlarged Result Text */
+.result-containerr h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Enlarged Attempt List */
+.result-containerr ul {
+  list-style: none;
+  padding: 0;
+  font-size: 22px;
+}
+
+/* Super 3D Start Button */
+.start-buttonr {
+  background: linear-gradient(to right, #ff007f, #ff4da6);
+  color: white;
+  padding: 20px 50px;
+  font-size: 28px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 15px 35px rgba(255, 0, 127, 0.6);
+  position: relative;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+/* Neon Glow Effect */
+.start-buttonr::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 120%;
+  height: 120%;
+  background: rgba(255, 0, 127, 0.5);
+  filter: blur(20px);
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+/* Hover Effect */
+.start-buttonr:hover {
+  transform: scale(1.1) rotateX(10deg);
+  box-shadow: 0 20px 40px rgba(255, 0, 127, 0.8);
+}
+
+.start-buttonr:hover::before {
+  opacity: 1;
+}
+
+/* Click Effect */
+.start-buttonr:active {
+  transform: scale(0.9);
+  box-shadow: 0 5px 15px rgba(255, 0, 127, 0.4);
+}
